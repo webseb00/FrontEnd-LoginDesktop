@@ -23,9 +23,9 @@
 
   &__content {
     @include mixins.centerXY;
-
+    width: 80%;
+    
     @include mixins.screen-medium-up(960px) {
-      width: 80%;
       position: absolute;
       top: 45%;
       left: 55%;
