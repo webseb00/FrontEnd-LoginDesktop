@@ -14,7 +14,7 @@
   
   &__bg {
     @include mixins.positionFullXY;
-    background-image: url('../../assets/austin-distel-h1RW-NFtUyc-unsplash.jpg');
+    background-image: url('../assets/austin-distel-h1RW-NFtUyc-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(1);
@@ -24,7 +24,7 @@
   &__content {
     @include mixins.centerXY;
     width: 80%;
-    
+
     @include mixins.screen-medium-up(960px) {
       position: absolute;
       top: 45%;

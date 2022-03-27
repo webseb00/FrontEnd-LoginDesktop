@@ -36,6 +36,10 @@
       top: -25px;
       left: 5px;
     } 
+
+    &-input:valid {
+      border: 2px solid $input-focus-border-color;
+    }
   
     &-icon {
       position: absolute;
