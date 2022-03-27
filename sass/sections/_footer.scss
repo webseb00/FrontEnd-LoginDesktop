@@ -1,0 +1,25 @@
+@use '../custom' as *;
+
+.footer {
+  background: $primary-dark;
+  color: $white;
+  padding-top: 2.2rem;
+
+  &__policies,
+  &__copyright {
+    font-size: .9rem;
+  }
+
+  &__policies {
+    margin: 2.6rem 0;
+  }
+
+  &__info {
+    line-height: 1.2;
+  }
+
+  &__copyright {
+    font-size: .8rem;
+    font-weight: 300;
+  }
+}

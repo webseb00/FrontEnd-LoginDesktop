@@ -1,0 +1,32 @@
+@use 'components/mixins';
+@use 'components/toasts';
+
+@use 'sections/profits';
+@use 'sections/login';
+@use 'sections/footer';
+
+// GLOBAL STYLES
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+
+  &__left {
+    display: grid;
+    align-items: end;
+  }
+
+  @include mixins.screen-medium-up(960px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 874px;
+  }
+}

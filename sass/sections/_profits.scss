@@ -1,0 +1,53 @@
+@use '../custom' as *;
+@use '../components/mixins';
+
+.profits {
+  position: relative;
+  height: 140vh;
+  
+  &::before {
+    content: '';
+    @include mixins.positionFullXY;
+    background-image: linear-gradient($primary, $primary);
+    opacity: .7;
+  }
+  
+  &__bg {
+    @include mixins.positionFullXY;
+    background-image: url('../../assets/austin-distel-h1RW-NFtUyc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+    z-index: -1;
+  }
+
+  &__content {
+    @include mixins.centerXY;
+
+    @include mixins.screen-medium-up(960px) {
+      width: 80%;
+      position: absolute;
+      top: 45%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__item {
+    &:first-child {
+      margin-bottom: 4rem;
+
+      @include mixins.screen-medium-up(480px) {
+        margin-bottom: 6rem;
+      }
+    }
+
+    h6 {
+      font-size: $h5-font-size;
+    }
+  }
+
+  @include mixins.screen-medium-up(960px) {
+    height: auto;
+  }
+}

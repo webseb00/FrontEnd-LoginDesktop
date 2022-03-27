@@ -1,0 +1,74 @@
+@use '../custom' as *;
+@use '../components/mixins';
+
+.login {
+  padding: 4.5rem 0;
+  text-align: center;
+  
+  &__header {
+    h6 {
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+
+    p {
+      font-size: .95rem;
+    }
+  }
+
+  &__form {
+
+    &-item {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+  
+    &-label {
+      position: absolute;
+      top: 0.8rem;
+      left: 1.3rem;
+      transition: $basic-transition;
+      font-size: .95rem;
+    }
+  
+    &-input:focus + &-label,
+    &-input:valid + &-label {
+      top: -25px;
+      left: 5px;
+    } 
+  
+    &-icon {
+      position: absolute;
+      right: 6px;
+      top: 1rem;
+      cursor: pointer;
+
+      @include mixins.screen-medium-up(480px) {
+        right: -40px;
+      }
+    }
+
+    button {
+      width: 48%;
+    }
+  }
+
+  a,
+  h6 {
+    color: $grey-medium;
+  }
+
+  &__spinner {
+    @include mixins.centerXY;
+
+    .spinner-border {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+  }
+
+  @include mixins.screen-medium-up(960px) {
+    padding: 0;
+    text-align: unset;
+  }
+}

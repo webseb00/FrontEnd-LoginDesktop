@@ -1,0 +1,49 @@
+// COLORS
+
+$violet-light: #23168c;
+$violet-dark: #0d034a;
+$grey-medium: #444444;
+$grey-light: #f3f3f3;
+
+$primary: $violet-light;
+$primary-dark: $violet-dark;
+
+// INPUTS STYLES
+
+$input-bg: $grey-light;
+$input-border-color: $grey-light;
+$input-focus-box-shadow: unset;
+$input-focus-border-color: $primary;
+
+$input-padding-y: 0.75rem;
+$input-padding-x: 1rem;
+
+// TRANSITIONS
+
+$basic-transition: all .4s ease-in-out;
+
+// BUTTONS
+
+$btn-padding-y: 0.75rem;
+
+// TOOLTIP
+
+$tooltip-font-size: .8rem;
+$tooltip-padding-y:  .5rem;
+$tooltip-padding-x:  .5rem;
+
+// SHADOWS
+
+$box-shadow-sm: 0 0.125rem 0.25rem rgb(0 0 0 / 22%);
+
+// BORDERS 
+
+$border-radius: .45rem;
+$border-width: 2px;
+
+// TOOLTIPS
+
+$tooltip-max-width: 250px;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
